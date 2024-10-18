@@ -3,11 +3,7 @@ import pytest
 
 def count_even(arr: list[int]) -> int:
     """Count the number of even numbers in an array."""
-    even = 0
-    for num in arr:
-        if num % 2 == 0:
-            even += 1
-    return even
+    return sum(1 for i in arr if i % 2 == 0)
 
 
 # Your tests can also be benchmarks
